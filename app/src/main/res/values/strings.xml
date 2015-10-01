@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Rocket</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Login -->
+    <string name="phone_number_and_email">Номер телефона или Email</string>
+    <string name="password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="auth">Авторизация</string>
+    <string name="dialogs">Диалоги</string>
+    <string name="connect">Подключение...</string>
+    <string name="loading">Загрузка...</string>
+    <string name="not_data">Нет данных</string>
+    <string name="title_activity_audio">AudioActivity</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="login_text">Сообщения ВКонтакте</string>
+
+
+    <!-- Attach -->
+    <string name="photo">Фото</string>
+    <string name="fwd_messages">Пересланные сообщения</string>
+    <string name="geo">Карта</string>
+    <string name="wall">Запись</string>
+    <string name="link">Ссылка</string>
+    <string name="wall_reply">Комментарий</string>
+    <string name="sticker">Стикер</string>
+    <string name="gift">Подарок</string>
+    <string name="doc">Документ</string>
+    <string name="video">Видео</string>
+    <string name="audio">Музыка</string>
+    <string name="gif">Анимация</string>
+    <string name="other">Вложения</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="errorVK1">Не удалось подключится к ВКонтакте</string>
+    <string name="errorVK2">Не удалось получить данные</string>
+    <string name="title_activity_attach">AttachActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_photo_view">PhotoView</string>
+    <string name="title_activity_color_select">ColorSelectActivity</string>
+    <string name="title_activity_object">ObjectActivity</string>
+    <string name="title_activity_multimedia">MultimediaActivity</string>
+
+</resources>

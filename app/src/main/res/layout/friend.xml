@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        android:src="@mipmap/dr_friends"
+        android:id="@+id/main" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:background="@drawable/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingTop="2dp"
+        android:id="@+id/block"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="#222222"
+            android:singleLine="true"
+            android:id="@+id/name" />
+
+        <TextView
+            android:paddingTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_dialogs"
+        android:title="Диалоги"
+        android:icon="@mipmap/dr_dialogs"
+        />
+    <!--item android:id="@+id/action_create_chat"
+        android:title="Создать чат"
+        android:icon="@mipmap/dr_create_chat"
+        />
+    <item android:id="@+id/action_faves"
+        android:title="Избранные"
+        android:icon="@mipmap/dr_fave"
+        /-->
+    <item android:id="@+id/action_friends"
+        android:title="Друзья"
+        android:icon="@mipmap/dr_friends"
+        />
+    <item android:id="@+id/action_settings"
+        android:title="Настройки"
+        android:icon="@mipmap/dr_settings"
+        />
+    <item android:id="@+id/action_help"
+        android:title="Помощь"
+        android:icon="@mipmap/dr_help"
+        />
+</menu>

@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context="sweet.messager.vk.AttachActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ActionBar.Transparent.VKMessages.ToolBar">
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@mipmap/ic_toolbar_back"
+            android:id="@+id/back" />
+
+
+        <View android:id="@+id/v" android:layout_width="1dp" android:layout_height="8dp"></View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Устройство"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/topTitle" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_menu_down"
+            android:id="@+id/imageView4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button2" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView5"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar3"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="172dp"
+            android:visibility="gone"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:padding="2dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

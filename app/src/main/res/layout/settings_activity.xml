@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:background="#F0F0F0"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_marginBottom="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Сообщения"
+                    android:id="@+id/message_category"
+                    android:paddingTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="#3E90CF"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:background="@drawable/lits_item"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/notification_click"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Уведомления"
+                        android:textSize="16dp"
+                        android:id="@+id/notification_text" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/notification_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:checked="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/lits_item"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/read_click"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Читать сообщения"
+                        android:textSize="16dp"
+                        android:id="@+id/reat_text" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/read_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:checked="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/lits_item"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/music_click"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Звук сообщений"
+                        android:textSize="16dp"
+                        android:id="@+id/music_text" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/music_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:checked="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/lits_item"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/image_click"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Загружать картинки"
+                        android:textSize="16dp"
+                        android:id="@+id/image_text" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/image_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:checked="true"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/lits_item"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/load_click"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Обновлять сообщения"
+                        android:textSize="16dp"
+                        android:id="@+id/load_text" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/load_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:checked="true"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:background="@drawable/lits_item"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/videoPlayer_click"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Мини-видеоплеер"
+                        android:textSize="16dp"
+                        android:id="@+id/videoPlayer_text" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/videoPlayer_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:checked="true"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_marginBottom="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дизайн"
+                    android:id="@+id/design_category"
+                    android:paddingTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="#3E90CF"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:background="@drawable/lits_item"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/wallPaper_click"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Фон чата"
+                        android:textSize="16dp"
+                        android:id="@+id/wallPaper_text" />
+
+                    <ImageView
+                        android:layout_marginRight="16dp"
+                        android:background="#D1DCE2"
+                        android:scaleType="centerCrop"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/wallPaper_image"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/lits_item"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/color_click"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Цвет приложения"
+                        android:textSize="16dp"
+                        android:id="@+id/color_text" />
+
+                    <View
+                        android:layout_marginRight="16dp"
+                        android:background="@color/mainColor"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/color_view"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_marginBottom="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Аккаунт"
+                    android:id="@+id/account_category"
+                    android:paddingTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="#3E90CF"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:background="@drawable/lits_item"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/exit_click"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Выйти из аккаунта"
+                        android:textSize="16dp"
+                        android:id="@+id/exit_text" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

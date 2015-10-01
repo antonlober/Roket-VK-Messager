@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:id="@+id/mainV"
+    tools:context="sweet.messager.vk.PhotoView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <sweet.messager.vk.view.TouchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img"
+        android:background="#ffffff"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#1A000000"
+        android:id="@+id/topBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@mipmap/ic_toolbar_back"
+            android:id="@+id/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Фотография"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/textView7" />
+    </LinearLayout>
+
+
+</RelativeLayout>

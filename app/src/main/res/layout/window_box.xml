@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="300dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Быстрый ответ"
+        android:background="@drawable/wb_top_roundet"
+        android:textColor="#ffffff"
+        android:padding="8dp"
+        android:id="@+id/title"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:padding="6dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/body" />
+
+    <LinearLayout
+        android:id="@+id/llMsgCompose"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/wb_roundet"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/inputMsg"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/wb_roundet"
+            android:textColor="#000000"
+            android:paddingLeft="6dp"
+            android:hint="Сообщение"
+            android:textCursorDrawable="@null"
+            android:imeOptions="actionSend"
+            android:inputType="textMultiLine|textCapSentences|textAutoCorrect|textShortMessage"
+            android:paddingRight="6dp"/>
+
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_send_gray"
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

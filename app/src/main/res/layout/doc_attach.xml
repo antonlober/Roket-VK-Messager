@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="6dp"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:background="@drawable/lits_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#9E9E9E"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/relativeLayout3">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:id="@+id/image"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ext"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="6dp"
+        android:layout_toRightOf="@+id/relativeLayout3"
+        android:layout_toLeftOf="@+id/relativeLayout"
+        android:layout_toStartOf="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:id="@+id/title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:textSize="10sp"
+            android:singleLine="true"
+            android:textColor="#BDBDBD"
+            android:id="@+id/text" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relativeLayout">
+        <ImageView
+            android:layout_gravity="right"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/plus"
+            android:src="@mipmap/ic_attachment"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

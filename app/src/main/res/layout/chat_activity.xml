@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChatActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainView">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ActionBar.Transparent.VKMessages.ToolBar">
+
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@mipmap/ic_toolbar_back"
+            android:id="@+id/back" />
+
+
+
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/objectClick"
+            android:paddingRight="6dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:padding="6dp"
+                android:id="@+id/photo"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:singleLine="true"
+                    android:id="@+id/name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/connect"
+                    android:textSize="14sp"
+                    android:textColor="#99ffffff"
+                    android:id="@+id/topTitle" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@mipmap/ic_toolbar_more"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/more" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:background="#D1DCE2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bg_chat"
+            android:scaleType="centerCrop"
+            android:background="@drawable/transparent"
+            android:src="@drawable/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_view_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:visibility="gone"
+            android:scrollbars="vertical"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true">
+        </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_data"
+            android:id="@+id/text"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:background="#ffffff"
+            android:visibility="gone"
+            android:id="@+id/list_view_attachments"
+            android:layout_width="fill_parent"
+            android:paddingRight="4dp"
+            android:layout_height="86dp">
+        </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/llMsgCompose"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:src="@mipmap/ic_attachment"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:id="@+id/attachment" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/inputMsg"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:textColor="#000000"
+            android:paddingLeft="6dp"
+            android:hint="Сообщение"
+            android:textCursorDrawable="@null"
+            android:imeOptions="actionSend"
+            android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+            android:paddingRight="6dp"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@mipmap/ic_insert_emoticon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:id="@+id/showEmoji" />
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_send"
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/emojiView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"></LinearLayout>
+
+
+</LinearLayout>

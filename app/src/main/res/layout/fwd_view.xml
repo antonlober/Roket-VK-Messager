@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/left_border"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:layout_marginTop="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/click"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/avatar" />
+
+        <LinearLayout
+            android:paddingLeft="4dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:id="@+id/author_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textColor="#80000000"
+                android:id="@+id/msg_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
+</LinearLayout>

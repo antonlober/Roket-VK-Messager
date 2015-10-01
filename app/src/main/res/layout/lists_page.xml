@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нету данных"
+        android:id="@+id/no_data"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="172dp"
+        android:visibility="gone"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:padding="2dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/friends_list"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

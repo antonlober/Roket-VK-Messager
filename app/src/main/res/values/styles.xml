@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimaryDark">#435e7e</item>
+        <item name="colorPrimary">@color/mainColor</item>
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">#435e7e</item>
+        <item name="colorControlHighlight">#c5c5c5</item>
+    </style>
+
+
+    <!--ACTION BAR-->
+
+    <style name="ActionBar.Transparent.VKMessages.ToolBar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#ff54759e</item>
+        <item name="logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+        <item name="titleTextAppearance">@style/ActionBar.Transparent.VKMessages.Title</item>
+    </style>
+
+    <!--ACTION BAR ITEMS-->
+
+    <style name="ActionBar.Transparent.VKMessages.Item" parent="android:TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- ACTION BAR TITLE-->
+
+    <style name="ActionBar.Transparent.VKMessages.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- MENU ANIMATION -->
+
+    <style name="MenuAnimation">
+        <item name="android:windowEnterAnimation">@anim/dock_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/dock_bottom_exit</item>
+    </style>
+
+    <!-- MENU STYLE -->
+
+    <style name="MyMenuTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:windowAnimationStyle">@style/MenuAnimation</item>
+    </style>
+
+    <!-- WINDOW REPLY -->
+    <style name="MyReplyTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/wb_roundet</item>
+        <item name="android:windowAnimationStyle">@style/MenuAnimation</item>
+    </style>
+
+
+    <!-- PHOTO VIEW -->
+    <style name="PhotoView" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+</resources>

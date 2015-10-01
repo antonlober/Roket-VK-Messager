@@ -1,0 +1,2 @@
+var dialogs = API.messages.getDialogs({"count":24,"preview_length":22,"v":"5.30"}).items;
+return {"dialogs": dialogs,"users":API.users.get({"user_ids": dialogs@.message@.user_id,"fields": "photo_50,photo_100,photo_200","v":"5.30"})};

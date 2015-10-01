@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chats_items"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loading"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_data"
+            android:id="@+id/text"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

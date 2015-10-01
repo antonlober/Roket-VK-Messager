@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="sweet.messager.vk.ListActivity">
+
+    <item android:id="@+id/action_attach_items"
+        android:title="Прикрепить"
+        android:icon="@mipmap/ic_attach_white"
+        app:showAsAction="always"
+        />
+
+</menu>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MultimediaActivity">
+    <item android:id="@+id/action_all_image"
+        android:title="Фото"
+        />
+    <item android:id="@+id/action_all_audio"
+        android:title="Музыка"
+        />
+    <item android:id="@+id/action_all_video"
+        android:title="Видео"
+        />
+    <item android:id="@+id/action_all_doc"
+        android:title="Документы"
+        />
+</menu>

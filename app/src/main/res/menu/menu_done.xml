@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="sweet.messager.vk.ListActivity">
+
+    <item android:id="@+id/action_done"
+        android:title="Выбрать"
+        android:icon="@mipmap/ic_done_white"
+        app:showAsAction="always"
+        />
+
+</menu>
